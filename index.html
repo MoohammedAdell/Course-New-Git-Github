@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tony</title>
+  </head>
+  <body>
+    <button id="Open">Open Navigation</button>
+    <button id="Close">x</button>
+    <ul id="list">
+      <li>HOME</li>
+      <li>SECURITY</li>
+      <li>ABOUT</li>
+      <li>CALL ME</li>
+      <li>SUPPOURT</li>
+      <li>HELP</li>
+      <li>CONTACT US</li>
+    </ul>
+  </body>
+
+  <script>
+    let list = document.getElementById("list")
+    let Open = document.getElementById("Open")
+    let Close = document.getElementById("Close")
+    Open.onclick = function(){
+        list.style.display = "flex"
+        this.style.display = "none"
+        Close.style.display = "flex"
+    }
+    Close.onclick = function(){
+        list.style.display = "none"
+        this.style.display = "none"
+        Open.style.display = "flex"
+    }
+  </script>
+</html>
